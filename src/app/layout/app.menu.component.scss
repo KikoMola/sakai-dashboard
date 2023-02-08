@@ -1,0 +1,28 @@
+:host ::ng-deep {
+    .icon-es {
+        width: 1rem;
+        height: 1rem;
+        background-image: url('../../assets/img/ES.svg');
+        background-repeat: no-repeat;
+        position: relative;
+        top: 4px;
+    }
+
+    .icon-fr {
+        width: 1rem;
+        height: 1rem;
+        background-image: url('../../assets/img/FR.svg');
+        background-repeat: no-repeat;
+        position: relative;
+        top: 3px;
+    }
+
+    .icon-en {
+        width: 1rem;
+        height: 1rem;
+        background-image: url('../../assets/img/GB.svg');
+        background-repeat: no-repeat;
+        position: relative;
+        top: 4px;
+    }
+}

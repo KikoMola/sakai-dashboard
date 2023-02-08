@@ -4,7 +4,8 @@ import { LayoutService } from './service/app.layout.service';
 
 @Component({
     selector: 'app-menu',
-    templateUrl: './app.menu.component.html'
+    templateUrl: './app.menu.component.html',
+    styleUrls: ['./app.menu.component.scss']
 })
 export class AppMenuComponent implements OnInit {
 
@@ -81,11 +82,14 @@ export class AppMenuComponent implements OnInit {
                         label: 'Idioma', icon: 'pi pi-fw pi-bookmark',
                         items: [
                             {
-                                label: 'Español', icon: 'pi pi-fw pi-bookmark',
+                                label: 'Español', icon: 'icon-es'
                             },
                             {
-                                label: 'Inglés', icon: 'pi pi-fw pi-bookmark',
+                                label: 'Inglés', icon: 'icon-en',
                             },
+                            {
+                                label: 'Francés', icon: 'icon-fr'
+                            }
                         ]
                     }
                 ]
