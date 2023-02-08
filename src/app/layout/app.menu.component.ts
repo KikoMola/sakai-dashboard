@@ -5,38 +5,44 @@ import { LayoutService } from './service/app.layout.service';
 @Component({
     selector: 'app-menu',
     templateUrl: './app.menu.component.html',
-    styleUrls: ['./app.menu.component.scss']
+    styleUrls: ['./app.menu.component.scss'],
 })
 export class AppMenuComponent implements OnInit {
-
     model: any[] = [];
 
-    constructor(public layoutService: LayoutService) { }
+    constructor(public layoutService: LayoutService) {}
 
     ngOnInit() {
         this.model = [
             {
                 label: 'Home',
                 items: [
-                    { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/app/dashboard'] }
-                ]
+                    {
+                        label: 'Dashboard',
+                        icon: 'pi pi-fw pi-home',
+                        routerLink: ['/app/dashboard'],
+                    },
+                ],
             },
             {
                 label: 'Ejercicios',
                 items: [
-                    { label: 'Form Layout', icon: 'pi pi-fw pi-id-card', routerLink: ['/app/uikit/formlayout'] },
-                    { label: 'Input', icon: 'pi pi-fw pi-check-square', routerLink: ['/app/uikit/input'] },
-                    { label: 'Float Label', icon: 'pi pi-fw pi-bookmark', routerLink: ['/app/uikit/floatlabel'] },
-                    { label: 'Invalid State', icon: 'pi pi-fw pi-exclamation-circle', routerLink: ['/app/uikit/invalidstate'] },
-                    { label: 'Button', icon: 'pi pi-fw pi-box', routerLink: ['/app/uikit/button'] },
-                ]
+                    {
+                        label: 'Form Layout',
+                        icon: 'pi pi-fw pi-id-card',
+                        routerLink: ['/app/uikit/formlayout'],
+                    },
+                ],
             },
             {
                 label: 'Comidas',
                 items: [
-                    { label: 'PrimeIcons', icon: 'pi pi-fw pi-prime', routerLink: ['/app/utilities/icons'] },
-                    { label: 'PrimeFlex', icon: 'pi pi-fw pi-desktop', url: ['https://www.primefaces.org/primeflex/'], target: '_blank' },
-                ]
+                    {
+                        label: 'PrimeIcons',
+                        icon: 'pi pi-fw pi-prime',
+                        routerLink: ['/app/utilities/icons'],
+                    },
+                ],
             },
             {
                 label: 'Pages',
@@ -45,7 +51,7 @@ export class AppMenuComponent implements OnInit {
                     {
                         label: 'Landing',
                         icon: 'pi pi-fw pi-globe',
-                        routerLink: ['/']
+                        routerLink: ['/'],
                     },
                     {
                         label: 'Auth',
@@ -54,45 +60,63 @@ export class AppMenuComponent implements OnInit {
                             {
                                 label: 'Login',
                                 icon: 'pi pi-fw pi-sign-in',
-                                routerLink: ['/auth/login']
+                                routerLink: ['/auth/login'],
                             },
                             {
                                 label: 'Error',
                                 icon: 'pi pi-fw pi-times-circle',
-                                routerLink: ['/auth/error']
+                                routerLink: ['/auth/error'],
                             },
                             {
                                 label: 'Access Denied',
                                 icon: 'pi pi-fw pi-lock',
-                                routerLink: ['/auth/access']
-                            }
-                        ]
+                                routerLink: ['/auth/access'],
+                            },
+                        ],
                     },
                     {
                         label: 'Crud',
                         icon: 'pi pi-fw pi-pencil',
-                        routerLink: ['/pages/crud']
-                    }
-                ]
+                        routerLink: ['/app/pages/crud'],
+                    },
+                ],
             },
             {
                 label: 'Ajustes',
                 items: [
                     {
-                        label: 'Idioma', icon: 'pi pi-fw pi-bookmark',
+                        label: 'Idioma',
+                        icon: 'pi pi-fw pi-bookmark',
                         items: [
                             {
-                                label: 'Español', icon: 'icon-es'
+                                label: 'Español',
+                                icon: 'icon-es',
                             },
                             {
-                                label: 'Inglés', icon: 'icon-en',
+                                label: 'Inglés',
+                                icon: 'icon-en',
                             },
                             {
-                                label: 'Francés', icon: 'icon-fr'
-                            }
-                        ]
-                    }
-                ]
+                                label: 'Francés',
+                                icon: 'icon-fr',
+                            },
+                        ],
+                    },
+                    {
+                        label: 'Tema',
+                        icon: 'pi pi-fw pi-bookmark',
+                        items: [
+                            {
+                                label: 'Modo claro',
+                                icon: 'pi pi-sun',
+                            },
+                            {
+                                label: 'Modo oscuro',
+                                icon: 'pi pi-moon',
+                            },
+                        ],
+                    },
+                ],
             },
         ];
     }
