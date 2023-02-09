@@ -86,7 +86,7 @@ export class AppMenuComponent implements OnInit {
                 items: [
                     {
                         label: 'Idioma',
-                        icon: 'pi pi-fw pi-bookmark',
+                        icon: 'pi pi-fw pi-comments',
                         items: [
                             {
                                 label: 'Español',
@@ -104,17 +104,17 @@ export class AppMenuComponent implements OnInit {
                     },
                     {
                         label: 'Tema',
-                        icon: 'pi pi-fw pi-bookmark',
+                        icon: 'pi pi-fw pi-desktop',
                         items: [
                             {
                                 label: 'Modo claro',
                                 icon: 'pi pi-sun',
-                                command: this.changeTheme('lara-light-indigo', 'light')
+                                command: () => this.changeTheme('lara-light-indigo', 'light')
                             },
                             {
                                 label: 'Modo oscuro',
                                 icon: 'pi pi-moon',
-                                command: this.changeTheme('arya-blue', 'dark')
+                                command: () => this.changeTheme('arya-blue', 'dark')
                             },
                         ],
                     },
@@ -132,7 +132,6 @@ export class AppMenuComponent implements OnInit {
             this.layoutService.config.colorScheme = colorScheme;
             this.layoutService.onConfigUpdate();
         });
-        console.log(theme)
     }
 
     replaceThemeLink(href: string, onComplete: Function) {
