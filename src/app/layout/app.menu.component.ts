@@ -38,8 +38,18 @@ export class AppMenuComponent implements OnInit {
                 label: 'Comidas',
                 items: [
                     {
-                        label: 'PrimeIcons',
-                        icon: 'pi pi-fw pi-prime',
+                        label: 'Añadir comida',
+                        icon: 'pi pi-fw pi-plus-circle',
+                        routerLink: ['/app/utilities/icons'],
+                    },
+                    {
+                        label: 'Listado hoy',
+                        icon: 'pi pi-fw pi-calendar',
+                        routerLink: ['/app/utilities/icons'],
+                    },
+                    {
+                        label: 'Buscar por día',
+                        icon: 'pi pi-fw pi-calendar-plus',
                         routerLink: ['/app/utilities/icons'],
                     },
                 ],
