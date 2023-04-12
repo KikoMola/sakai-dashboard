@@ -32,6 +32,21 @@ export class AppMenuComponent implements OnInit {
                         icon: 'pi pi-fw pi-id-card',
                         routerLink: ['/app/uikit/formlayout'],
                     },
+                    {
+                        label: 'Añadir ejercicio',
+                        icon: 'pi pi-fw pi-plus-circle',
+                        routerLink: ['/app/ejercicios/add'],
+                    },
+                    {
+                        label: 'Listado hoy',
+                        icon: 'pi pi-fw pi-calendar',
+                        routerLink: ['/app/ejercicios/today'],
+                    },
+                    {
+                        label: 'Buscar por día',
+                        icon: 'pi pi-fw pi-calendar-plus',
+                        routerLink: ['/app/ejercicios/search'],
+                    },
                 ],
             },
             {
@@ -40,17 +55,17 @@ export class AppMenuComponent implements OnInit {
                     {
                         label: 'Añadir comida',
                         icon: 'pi pi-fw pi-plus-circle',
-                        routerLink: ['/app/utilities/icons'],
+                        routerLink: ['/app/comidas/add'],
                     },
                     {
                         label: 'Listado hoy',
                         icon: 'pi pi-fw pi-calendar',
-                        routerLink: ['/app/utilities/icons'],
+                        routerLink: ['/app/comidas/today'],
                     },
                     {
                         label: 'Buscar por día',
                         icon: 'pi pi-fw pi-calendar-plus',
-                        routerLink: ['/app/utilities/icons'],
+                        routerLink: ['/app/comidas/search'],
                     },
                 ],
             },
